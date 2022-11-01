@@ -157,18 +157,14 @@ export default defineComponent({
 </script>
   
 <style scoped>
-@import 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
 }
+
 hr {
   border-top: 2px solid black;
   margin-bottom: -10px;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url(../../public/assets/fonts/Poppins-Regular.ttf);
 }
 
 .non-active {
