@@ -1,17 +1,14 @@
 <template>
   <ion-page>
-    <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-title>Kolam</ion-title>
-      </ion-toolbar>
-    </ion-header>
 
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Kolam</ion-title>
-        </ion-toolbar>
-      </ion-header>
+      <div class="kolam-header" style="margin-inline: 30px;">
+        <h1>Kolam</h1>
+        <div>
+          <img  class="sort-icon" src="/assets/page2/sorting.svg" alt="">
+          <img src="/assets/page2/sort.svg" alt="">
+        </div>
+      </div>
       <div>
         <ion-card class="box">
           <ion-card-header>
@@ -141,17 +138,14 @@
 </template>
   
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon } from '@ionic/vue';
+import { IonContent, IonPage} from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'PageSecond',
   components: {
     IonContent,
-    IonHeader,
-    IonPage,
-    IonTitle,
-    IonToolbar
+    IonPage
   }
 });
 </script>
@@ -162,9 +156,25 @@ export default defineComponent({
   font-family: Poppins, sans-serif;
 }
 
+.kolam-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 12px;
+  font-weight: bold;
+}
+.kolam-header img {
+  width: 30px;
+}
+
+
 hr {
   border-top: 2px solid black;
   margin-bottom: -10px;
+}
+
+ion-card-title {
+  font-weight: 600;
 }
 
 .non-active {
@@ -174,10 +184,10 @@ hr {
   align-items: center;
   padding: 5px 10px;
   gap: 10px;
-
+  font-weight: 600;
   width: 100px;
   height: 34px;
-
+  
   background: #c20000;
   border-radius: 12px;
 }
@@ -210,12 +220,16 @@ hr {
   text-decoration: none;
 }
 
+.sort-icon {
+  margin-right: 20px;
+}
+
 .box {
   padding: 1px 0px;
   font-family: poppin;
   background-color: white;
   color: black;
-  margin: 30px;
+  margin: 15px 30px;
   border-radius: 16px;
   font-size: 18px;
   font-weight: 600;
@@ -234,7 +248,8 @@ hr {
   align-items: center;
   padding: 5px 10px;
   gap: 10px;
-
+  letter-spacing: 0.05em;
+  font-weight: 600;
   width: 58px;
   height: 34px;
 

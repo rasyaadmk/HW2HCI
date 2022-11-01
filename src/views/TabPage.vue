@@ -4,7 +4,7 @@
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="HomePage" href="/tabs/home">
-          <ion-icon name="home-outline"></ion-icon>
+          <ion-icon src="/assets/icon/Home.svg" />
         </ion-tab-button>
 
         <ion-tab-button tab="PageSecond" href="/tabs/Page2">
