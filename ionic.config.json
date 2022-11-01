@@ -1,0 +1,7 @@
+{
+  "name": "ms1hci",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
