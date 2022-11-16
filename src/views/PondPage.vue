@@ -5,7 +5,7 @@
       <div class="kolam-header" style="margin-inline: 30px;">
         <h1>Kolam</h1>
         <div>
-          <img  class="sort-icon" src="/assets/page2/sorting.svg" alt="">
+          <img class="sort-icon" src="/assets/page2/sorting.svg" alt="">
           <img src="/assets/page2/sort.svg" alt="">
         </div>
       </div>
@@ -133,12 +133,16 @@
         </ion-card>
       </div>
     </ion-content>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button href="/registrationpage"><span style="font-size: 60px; font-weight:bolder">+</span>
+      </ion-fab-button>
+    </ion-fab>
   </ion-page>
 
 </template>
   
 <script lang="ts">
-import { IonContent, IonPage} from '@ionic/vue';
+import { IonContent, IonPage } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -152,6 +156,7 @@ export default defineComponent({
   
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   font-family: Poppins, sans-serif;
 }
@@ -163,6 +168,7 @@ export default defineComponent({
   margin: 15px 12px;
   font-weight: bold;
 }
+
 .kolam-header img {
   width: 30px;
 }
@@ -187,7 +193,7 @@ ion-card-title {
   font-weight: 600;
   width: 100px;
   height: 34px;
-  
+
   background: #c20000;
   border-radius: 12px;
 }

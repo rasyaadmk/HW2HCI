@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 import TabsPage from '../views/TabPage.vue'
+import RegForm from '../views/RegForm.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -21,10 +22,13 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'Page2',
-        component: () => import('@/views/Page2.vue')
+        component: () => import('@/views/PondPage.vue')
       },
-
     ]
+  },
+  {
+    path: '/registrationpage',
+    component: RegForm
   }
 ]
 
